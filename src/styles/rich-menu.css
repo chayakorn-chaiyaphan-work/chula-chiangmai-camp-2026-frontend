@@ -1,0 +1,21 @@
+* { box-sizing: border-box; }
+html, body, #rich-menu-root { width: 100%; height: 100%; margin: 0; overflow: hidden; }
+body { font-family: Inter, Aptos, system-ui, -apple-system, "Segoe UI", sans-serif; background: #f4f6f4; }
+.rich-menu { width: 100%; height: 100%; display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(2, 1fr); border: 6px solid #1b201e; background: #1b201e; gap: 6px; }
+.rich-menu__item { position: relative; display: grid; grid-template-columns: 205px minmax(0, 1fr); align-items: center; gap: 54px; padding: 92px 104px; overflow: hidden; background: #fff; }
+.rich-menu__item::after { content: ""; position: absolute; inset: auto 0 0; height: 20px; background: var(--tone); }
+.rich-menu__number { position: absolute; top: 52px; right: 62px; color: #d8dedb; font-size: 56px; font-weight: 800; }
+.rich-menu__icon { width: 205px; height: 205px; display: grid; place-items: center; color: var(--tone-dark); border-radius: 50%; background: var(--tone-soft); }
+.rich-menu__icon svg { width: 105px; height: 105px; }
+.rich-menu h1 { margin: 0 0 22px; color: #171b19; font-size: 70px; line-height: 1.05; letter-spacing: 0; }
+.rich-menu p { margin: 0; color: #66706a; font-size: 33px; line-height: 1.3; }
+.rich-menu__brand { position: absolute; left: 104px; bottom: 46px; color: rgba(255,255,255,.78); font-size: 22px; font-weight: 800; letter-spacing: .12em; }
+.rich-menu__item--pink { --tone: #d4145a; --tone-dark: #ffffff; --tone-soft: rgba(255,255,255,.17); background: #a90e45; }
+.rich-menu__item--pink h1 { color: #fff; }
+.rich-menu__item--pink p { color: rgba(255,255,255,.72); }
+.rich-menu__item--pink .rich-menu__number { color: rgba(255,255,255,.15); }
+.rich-menu__item--green { --tone: #237a57; --tone-dark: #185b40; --tone-soft: #e5f3ed; }
+.rich-menu__item--gold { --tone: #b57b10; --tone-dark: #855600; --tone-soft: #fff2d5; }
+.rich-menu__item--coral { --tone: #cc5d4c; --tone-dark: #963d31; --tone-soft: #fcebe8; }
+.rich-menu__item--blue { --tone: #37758b; --tone-dark: #245b73; --tone-soft: #e9f4f8; }
+.rich-menu__item--forest { --tone: #315648; --tone-dark: #24483a; --tone-soft: #e7efeb; }
