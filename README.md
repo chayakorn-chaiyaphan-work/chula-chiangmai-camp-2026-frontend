@@ -1,0 +1,1 @@
+# chula-chiangmai-camp-2026-frontend
